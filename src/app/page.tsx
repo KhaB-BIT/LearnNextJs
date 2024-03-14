@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import {
     Drawer,
@@ -9,7 +8,8 @@ import {
     DrawerHeader,
     DrawerTitle,
     DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "../../components/ui/drawer"
+import { Button } from "../../components/ui/button"
 
 export default function Home() {
     return (
@@ -19,11 +19,8 @@ export default function Home() {
                     Chiều buồn nghiêng nắng !&nbsp;
                     <code className="font-mono font-bold">app/page.tsx</code>
                 </p>
-
                 <Drawer>
-                    <DrawerTrigger>
-                        <Button variant="ghost">Em laf ai</Button>
-                    </DrawerTrigger>
+                    <DrawerTrigger>Open</DrawerTrigger>
                     <DrawerContent>
                         <DrawerHeader>
                             <DrawerTitle>Are you absolutely sure?</DrawerTitle>
